@@ -12,7 +12,7 @@ Consigli del giorno
 const userWord = prompt("Inserisci una parola!")
 console.log("Hai inserito la parola " + userWord);
 
-//Creo una funzione che mi controlla se la parola che io ho inserito è palindroma
+//Creo una funzione che mi controlla se la parola che l'utente ho inserito è palindroma
 //word è la parola da controllare presa tramite input
 //reverseWord è la parola che ho girato al contrario     
 let wordReverted = pali(userWord);
