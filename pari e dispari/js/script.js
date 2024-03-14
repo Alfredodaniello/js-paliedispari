@@ -8,10 +8,16 @@ Dichiariamo chi ha vinto.
 */
 
 //Chiedo all'utente di scegliere tra pari e dispari e di inserire un numero da 1 a 5
-const userChoice = prompt("Scegli tra pari o dispari!");
-console.log("l'utente ha scelto " +  userChoice )
-const userNumber = parseInt(prompt("Scegli un numero compreso tra 1 e 5!"));
-console.log("il numero scelto è " + userNumber)
+let userChoice=""
+while (userChoice !== "pari" && userChoice !== "dispari"){
+    userChoice= prompt("Scegli tra pari o dispari")
+}
+console.log("l'utente ha scelto " + userChoice);
+let userNumber = 0;
+while (userNumber<1 || userNumber>5) {
+    userNumber =parseInt(prompt("Scegli un numero compreso tra 1 e 5!"))
+}
+console.log("l'utente ha scelto il numero " + userNumber);
 
 //Genero un numero random tra 1 e 5 per il computer tramite funzione
 let computerNumber = getRndInteger(1,5);
