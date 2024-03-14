@@ -26,11 +26,12 @@ function pali(word){
 }
 
 //Confronto la parola inserita e la parola girata per determinare se è palindroma
+let userMessage;
 if (userWord === wordReverted){
     userMessage = "La parola è palindroma"
 } else {
     userMessage ="la parola non è palindroma"
 }
-console.log(userMessage);
+alert(userMessage);
 
 
